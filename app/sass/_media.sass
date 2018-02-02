@@ -1,0 +1,246 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	header
+		text-align: center
+
+	.navigation li::after
+		right: 53px
+		top: 0px
+
+	.button-wraper a
+		padding: 15px 15px
+		font-size: 0.9em
+
+	.circle
+		width: 20px
+		height: 20px
+		left: 142px
+		top: 0px
+
+	.circle2
+		width: 25px
+		height: 25px
+		left: 230px
+		top: -25px
+		p
+		font-size: 0.9em
+		line-height: 17px
+
+	.item
+  margin: 0 auto
+  width: 90%
+  p
+    font-family: "MinionPro"
+    font-size: 1.3em
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+
+	.comp-img
+		margin-top: 135px
+
+	.navigation
+		margin-left: -30px
+
+	.navigation li::after
+		right: 135px
+
+	.conditions .item p
+		font-size: 1.1em
+		h2
+			font-size: 0.5em
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 765px)
+
+	.navigation li::after
+		display: none
+
+	.comp-img
+		display: none
+
+	.mobile
+		display: block
+
+	.navigation a
+		width: 80%
+		padding: 23px
+		text-align: center
+		margin: 0 auto
+		font-size: 1.4em
+		border-left: 7px solid orange
+
+
+
+	.head_nav 
+		li
+			display: block-inline
+			text-align: center
+			width: 100%
+			border-left: 4px solid orange
+			padding: 0
+
+	.head_nav a:hover
+		border-radius: 0
+
+	header ul
+		display: none
+
+	#toggle
+  display: block
+  width: 28px
+  margin-top: 30px
+  margin-right: 20px
+  float: right
+
+
+#toggle span:after,
+#toggle span:before 
+  content: "";
+  position: absolute
+  left: 0
+  top: -9px
+
+#toggle span:after
+  top: 9px
+
+#toggle span 
+  position: relative
+  display: block
+
+
+#toggle span,
+#toggle span:after,
+#toggle span:before 
+  width: 100%
+  height: 5px
+  background-color: #888
+  transition: all 0.3s
+  backface-visibility: hidden
+  border-radius: 2px
+
+
+/* on activation */
+#toggle.on span 
+  background-color: transparent
+
+#toggle.on span:before 
+  transform: rotate(45deg) translate(5px, 5px)
+
+#toggle.on span:after 
+  transform: rotate(-45deg) translate(7px, -8px)
+
+#toggle.on
+  opacity: 1
+  visibility: visible
+
+
+
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+
+
+
+	.mobile
+		display: block
+
+	.comp-img
+		display: none
+
+	.navigation a
+		width: 100%
+		padding: 23px
+		text-align: center
+		margin-left: 0 auto
+		font-size: 1.4em
+
+	.navigation li::after
+		display: none
+
+	.button-wraper a
+		padding: 20px 23px
+
+	.circle
+		display: none
+
+	.circle2
+		display: none
+
+	.head_nav a:hover
+		border-radius: 0
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+
+	.mobile
+		display: block
+
+	.comp-img
+		display: none
+
+	.navigation a
+		width: 100%
+		padding: 20px
+		text-align: center
+		margin-left: -18px
+		font-size: 1.4em
+
+	.navigation li::after
+		display: none
+
+	.circle
+		display: none
+
+	.circle2
+		display: none
+
+	.button-wraper a
+		margin: 0 auto
+		padding: 20px 17px
+
+	.head_nav a:hover
+		border-radius: 0
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
